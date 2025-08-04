@@ -3,11 +3,11 @@ from src import GDSParser
 from src import LayerMap
 from src import LayerProcessor
 
-layerMap = LayerMap("json/CM018GII.json")
+layerMap = LayerMap("json/CRN28HPCPlus.json")
 
 gdsParser = GDSParser()
-gdsParser.read("gds/inv1.gds")
-gdsParser.setResizeFactor(5)
+gdsParser.read("gds/inv_sample.gds")
+gdsParser.setResizeFactor(1)
 gdsParser.loadLayerMap(layerMap)
 gdsParser.parse()
 
